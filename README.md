@@ -1,159 +1,78 @@
-﻿<div align="center">
+<div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0F172A,45:0891B2,100:22D3EE&text=Mohamed%20%7C%20MR%20GFX&fontColor=FFFFFF&fontSize=42&fontAlignY=36&desc=Full-Stack%20Developer%20%2B%20Creative%20Technologist%20%2B%20AI%20Automation%20Builder&descAlignY=58&animation=fadeIn" alt="Mohamed MR GFX animated header" />
+# Mohamed Reda
 
-<a href="https://github.com/mr-socialmedia">
-  <img src="https://github.com/mr-socialmedia.png" width="150" height="150" alt="Mohamed profile avatar" style="border-radius:50%;" />
-</a>
+**Marketing Consultant · Creative Director · AI Specialist · Full-Stack Digital Builder**
 
-<br />
+Kuwait · Working remotely worldwide · Arabic & English
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=26&duration=2600&pause=700&color=22D3EE&center=true&vCenter=true&width=900&lines=I+build+brands%2C+websites%2C+dashboards%2C+and+automation.;React+%2B+Next.js+%2B+Node.js+%2B+Firebase+%2B+Supabase.;AI+workflows%2C+Telegram+bots%2C+REST+APIs%2C+and+admin+systems.;Creative+design+thinking+with+production-grade+engineering." alt="Animated typing introduction" />
-
-<br />
-
-<a href="https://www.mr-gfx.com"><img src="https://img.shields.io/badge/MR%20GFX-Website-22D3EE?style=for-the-badge&logo=google-chrome&logoColor=0F172A" alt="MR GFX website" /></a>
-<a href="mailto:hello@mr-gfx.com"><img src="https://img.shields.io/badge/Email-hello%40mr--gfx.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Mohamed" /></a>
-<a href="https://github.com/mr-socialmedia"><img src="https://img.shields.io/badge/GitHub-mr--socialmedia-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
-<img src="https://komarev.com/ghpvc/?username=mr-socialmedia&style=for-the-badge&color=0891b2&label=PROFILE+VIEWS" alt="Profile views" />
+[Website](https://mr-gfx.com) · [LinkedIn](https://www.linkedin.com/in/mohamedreda-gfx/) · [Instagram](https://instagram.com/mohamedr.ai) · [WhatsApp](https://wa.me/96565099769) · [Email](mailto:mohamedreda.gfx@gmail.com)
 
 </div>
 
 ---
 
-## whoami
+## What I do
 
-```ts
-const mohamed = {
-  brand: "MR GFX",
-  role: "Full-stack developer, UI/UX maker, automation engineer",
-  focus: [
-    "production-ready web apps",
-    "admin dashboards and portals",
-    "AI-powered workflows",
-    "Telegram bots and business automation",
-    "brand systems and creative digital experiences",
-  ],
-  mindset: "Design the experience, engineer the system, ship the result.",
-};
-```
+I run growth for brands and build the systems behind it. The same person plans the campaign, designs the creative, writes the automation and ships the product, so nothing gets lost between a strategy deck and a working funnel.
 
-I build practical digital products that look polished, load fast, and solve real business problems. My work blends creative direction, full-stack engineering, automation, AI tools, integrations, and deployment discipline.
+10+ years across performance marketing, creative direction and digital product work, for brands in Kuwait and the GCC.
 
----
+| Discipline | What it looks like in practice |
+|---|---|
+| **Growth & performance marketing** | Strategy, media buying (Meta, Google, TikTok, Snapchat), funnels, measurement |
+| **Creative direction** | Brand identity, graphic design, video production, campaign concepts |
+| **AI & automation** | Claude and GPT workflows, Make and n8n automations, AI-assisted content and operations |
+| **Web & product** | Next.js, React, TypeScript, Node.js, SaaS platforms, dashboards, MCP servers |
 
-## What I Build
+## Ventures
 
-<table>
-<tr>
-<td width="50%" valign="top">
+| Venture | What it is |
+|---|---|
+| [**Mashhor Hub**](https://mashhor-hub.com) | Influencer marketing platform connecting GCC brands with creators |
+| [**Mashhor Cloud**](https://mashhor.cloud) | AI-powered SaaS for influencer discovery, analytics and campaign management |
+| [**Munjiz**](https://munjiz-eg.com) | Egyptian government-services e-platform |
+| [**MR GFX**](https://mr-gfx.com) | My consulting practice and portfolio |
 
-### Product Engineering
+## Open-source work
 
-- Full-stack websites and web apps
-- React / Next.js interfaces
-- Node.js / Express APIs
-- Firebase, Firestore, Supabase backends
-- Auth, admin panels, dashboards, and portals
-- REST API integrations and reliable data flows
+Most of my product code is in private repositories, so this list is short and deliberate.
 
-</td>
-<td width="50%" valign="top">
+| Repository | Description |
+|---|---|
+| [**mashhor-quran-mcp**](https://github.com/mr-socialmedia/mashhor-quran-mcp) | MCP server that gives Claude, ChatGPT and other MCP clients read-only tools for the Quran: reciters, surahs, text search, prayer times, live radio and the Hijri date. Runs locally over stdio or remotely over Streamable HTTP. |
+| [**Mashhor-Website**](https://github.com/mr-socialmedia/Mashhor-Website) | Public website for Mashhor Hub |
 
-### Creative Systems
+## Stack
 
-- MR GFX-style brand and visual direction
-- Landing pages and SEO-ready pages
-- UI/UX for business workflows
-- AI content and productivity systems
-- Telegram bots and workflow automation
-- Launch, GitHub, Vercel, and production handoff
+![TypeScript](https://img.shields.io/badge/TypeScript-0f172a?style=flat-square&logo=typescript&logoColor=3178c6)
+![Next.js](https://img.shields.io/badge/Next.js-0f172a?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-0f172a?style=flat-square&logo=react&logoColor=61dafb)
+![Node.js](https://img.shields.io/badge/Node.js-0f172a?style=flat-square&logo=nodedotjs&logoColor=5fa04e)
+![Tailwind](https://img.shields.io/badge/Tailwind-0f172a?style=flat-square&logo=tailwindcss&logoColor=38bdf8)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0f172a?style=flat-square&logo=postgresql&logoColor=4169e1)
+![Supabase](https://img.shields.io/badge/Supabase-0f172a?style=flat-square&logo=supabase&logoColor=3ecf8e)
+![Firebase](https://img.shields.io/badge/Firebase-0f172a?style=flat-square&logo=firebase&logoColor=ffca28)
+![Vercel](https://img.shields.io/badge/Vercel-0f172a?style=flat-square&logo=vercel&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-0f172a?style=flat-square&logo=n8n&logoColor=ea4b71)
+![Figma](https://img.shields.io/badge/Figma-0f172a?style=flat-square&logo=figma&logoColor=f24e1e)
 
-</td>
-</tr>
-</table>
+## Work with me
 
----
+Open to consulting engagements, campaign and growth retainers, AI-automation projects and product builds.
 
-## Toolbox
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=ts,js,react,next,nodejs,express,tailwind,html,css,git,github,vercel,firebase,supabase,mongodb,postgres,docker,figma,wordpress&perline=10" alt="Technology stack icons" />
-
-<br />
-<br />
-
-<img src="https://img.shields.io/badge/AI%20APIs-111827?style=for-the-badge&logo=openai&logoColor=22D3EE" alt="AI APIs" />
-<img src="https://img.shields.io/badge/REST%20APIs-0891B2?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
-<img src="https://img.shields.io/badge/Telegram%20Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Bots" />
-<img src="https://img.shields.io/badge/UI%2FUX-7C3AED?style=for-the-badge&logo=figma&logoColor=white" alt="UI UX" />
-<img src="https://img.shields.io/badge/SEO-16A34A?style=for-the-badge&logo=google&logoColor=white" alt="SEO" />
-
-</div>
+**Best way to start:** send a short message on [WhatsApp](https://wa.me/96565099769) or [email](mailto:mohamedreda.gfx@gmail.com) with your goal and your current bottleneck. Or book through [mr-gfx.com](https://mr-gfx.com).
 
 ---
 
-## Featured Focus
+<div dir="rtl" align="right">
 
-```mermaid
-flowchart LR
-  A[Idea] --> B[Brand + UX]
-  B --> C[Frontend]
-  C --> D[Backend + Database]
-  D --> E[Automation + AI]
-  E --> F[Deploy + Improve]
-```
+## نبذة بالعربي
 
-- I prefer small, safe, production-ready changes over noisy rewrites.
-- I care about clean UI states: loading, empty, success, error, and edge cases.
-- I build with security in mind: secrets, sessions, uploads, permissions, and admin routes.
-- I keep business value visible: performance, SEO, reliability, and maintainability.
+**محمد رضا** — مستشار تسويق ومدير إبداعي وأخصائي ذكاء اصطناعي ومطوّر منتجات رقمية، من الكويت ويعمل مع عملاء في الخليج وخارجه.
 
----
+أخطّط الحملات وأصمّم الهوية والمحتوى وأبني الأتمتة والمنتجات الرقمية، فلا تضيع التفاصيل بين الاستراتيجية والتنفيذ. أكثر من ١٠ سنوات في التسويق بالأداء، والإبداع، وبناء المنتجات الرقمية.
 
-## Numbers
-
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=mr-socialmedia&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&custom_title=GitHub%20Stats" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-socialmedia&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
-
-<br />
-<br />
-
-<img src="https://streak-stats.demolab.com?user=mr-socialmedia&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub contribution streak" />
-
-</div>
-
----
-
-## Contribution Graph
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mr-socialmedia&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Contribution activity graph" />
-
-</div>
-
----
-
-## Current Direction
-
-```txt
-MR GFX       -> creative digital identity, design, and web presence
-Engineering  -> Next.js, APIs, databases, dashboards, deployment
-Automation   -> AI workflows, Telegram bots, CRM-style operations
-Quality      -> secure defaults, clean UX, performance, maintainability
-```
-
-<div align="center">
-
-### Let us build something sharp.
-
-<a href="https://www.mr-gfx.com"><img src="https://img.shields.io/badge/Visit%20MR%20GFX-22D3EE?style=for-the-badge&logo=google-chrome&logoColor=0F172A" alt="Visit MR GFX" /></a>
-<a href="mailto:hello@mr-gfx.com"><img src="https://img.shields.io/badge/Start%20a%20Project-FFFFFF?style=for-the-badge&logo=gmail&logoColor=0F172A" alt="Start a project" /></a>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:22D3EE,50:0891B2,100:0F172A" alt="Animated footer" />
+للتواصل: [واتساب](https://wa.me/96565099769) · [البريد الإلكتروني](mailto:mohamedreda.gfx@gmail.com) · [الموقع](https://mr-gfx.com/ar/)
 
 </div>
