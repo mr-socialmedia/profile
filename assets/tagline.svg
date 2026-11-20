@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="44" viewBox="0 0 900 44" role="img" aria-label="Brands, websites, dashboards, bots and automation, built end to end.">
+  <style>
+    text{font:700 22px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#c4ff47;text-anchor:middle}
+    .l{opacity:0;animation:cy 12s infinite}
+    .l:nth-of-type(2){animation-delay:3s}.l:nth-of-type(3){animation-delay:6s}.l:nth-of-type(4){animation-delay:9s}
+    @keyframes cy{0%{opacity:0;transform:translateY(10px)}4%,22%{opacity:1;transform:none}27%,100%{opacity:0;transform:translateY(-10px)}}
+    .c{animation:b 1s steps(1) infinite;fill:#c4ff47}@keyframes b{50%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.l{animation:none;opacity:0}.l:first-of-type{opacity:1}.c{animation:none}}
+  </style>
+  <text class="l" x="450" y="30">I build brands, sites, dashboards and automation.</text>
+  <text class="l" x="450" y="30">Next.js · TypeScript · Node.js · Supabase.</text>
+  <text class="l" x="450" y="30">AI workflows, Telegram bots and admin systems.</text>
+  <text class="l" x="450" y="30">Bilingual Arabic / English, RTL done right.</text>
+</svg>

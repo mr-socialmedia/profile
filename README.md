@@ -1,159 +1,122 @@
-﻿<div align="center">
+<div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=190&color=0:0F172A,45:0891B2,100:22D3EE&text=Mohamed%20%7C%20MR%20GFX&fontColor=FFFFFF&fontSize=42&fontAlignY=36&desc=Full-Stack%20Developer%20%2B%20Creative%20Technologist%20%2B%20AI%20Automation%20Builder&descAlignY=58&animation=fadeIn" alt="Mohamed MR GFX animated header" />
+<img src="assets/header.svg" width="100%" alt="Mohamed Reda, MR GFX. Full-stack developer, creative technologist, AI automation." />
 
-<a href="https://github.com/mr-socialmedia">
-  <img src="https://github.com/mr-socialmedia.png" width="150" height="150" alt="Mohamed profile avatar" style="border-radius:50%;" />
-</a>
+<img src="assets/tagline.svg" width="760" alt="I build brands, sites, dashboards and automation." />
 
-<br />
+<a href="https://mr-gfx.com"><img src="https://img.shields.io/badge/mr--gfx.com-C4FF47?style=for-the-badge&logo=googlechrome&logoColor=0A0A0E" alt="Website" /></a>
+<a href="https://www.linkedin.com/in/mohamedreda-gfx/"><img src="https://img.shields.io/badge/LinkedIn-0A0A0E?style=for-the-badge&logo=linkedin&logoColor=C4FF47" alt="LinkedIn" /></a>
+<a href="https://mr-gfx.com/en/book"><img src="https://img.shields.io/badge/Book%20a%20call-0A0A0E?style=for-the-badge&logo=googlecalendar&logoColor=C4FF47" alt="Book a call" /></a>
+<a href="mailto:hello@mr-gfx.com"><img src="https://img.shields.io/badge/hello%40mr--gfx.com-0A0A0E?style=for-the-badge&logo=gmail&logoColor=C4FF47" alt="Email" /></a>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=26&duration=2600&pause=700&color=22D3EE&center=true&vCenter=true&width=900&lines=I+build+brands%2C+websites%2C+dashboards%2C+and+automation.;React+%2B+Next.js+%2B+Node.js+%2B+Firebase+%2B+Supabase.;AI+workflows%2C+Telegram+bots%2C+REST+APIs%2C+and+admin+systems.;Creative+design+thinking+with+production-grade+engineering." alt="Animated typing introduction" />
+<br /><br />
 
-<br />
-
-<a href="https://www.mr-gfx.com"><img src="https://img.shields.io/badge/MR%20GFX-Website-22D3EE?style=for-the-badge&logo=google-chrome&logoColor=0F172A" alt="MR GFX website" /></a>
-<a href="mailto:hello@mr-gfx.com"><img src="https://img.shields.io/badge/Email-hello%40mr--gfx.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Mohamed" /></a>
-<a href="https://github.com/mr-socialmedia"><img src="https://img.shields.io/badge/GitHub-mr--socialmedia-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
-<img src="https://komarev.com/ghpvc/?username=mr-socialmedia&style=for-the-badge&color=0891b2&label=PROFILE+VIEWS" alt="Profile views" />
+<img src="assets/stats.svg" width="720" alt="10+ years, 1000+ projects, 250+ clients" />
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
-## whoami
+## 👋 Who I am
+
+I'm **Mohamed Reda**, the person behind **MR GFX**: a brand-and-engineering practice that takes an idea from identity to a live, measured product. Design, code, marketing and automation sit under one roof, so nothing gets lost between teams.
 
 ```ts
 const mohamed = {
-  brand: "MR GFX",
-  role: "Full-stack developer, UI/UX maker, automation engineer",
-  focus: [
-    "production-ready web apps",
-    "admin dashboards and portals",
-    "AI-powered workflows",
-    "Telegram bots and business automation",
-    "brand systems and creative digital experiences",
-  ],
-  mindset: "Design the experience, engineer the system, ship the result.",
+  brand:   "MR GFX",
+  base:    "Kuwait · working across the Gulf and Egypt",
+  languages: ["العربية", "English"],
+  craft:   ["brand systems", "web apps", "dashboards", "AI workflows", "bots", "growth"],
+  rule:    "Design the experience. Engineer the system. Measure the result.",
 };
 ```
 
-I build practical digital products that look polished, load fast, and solve real business problems. My work blends creative direction, full-stack engineering, automation, AI tools, integrations, and deployment discipline.
+<img src="assets/divider.svg" width="100%" alt="" />
 
----
-
-## What I Build
+## 🧩 What I build
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### Product Engineering
-
-- Full-stack websites and web apps
-- React / Next.js interfaces
-- Node.js / Express APIs
-- Firebase, Firestore, Supabase backends
-- Auth, admin panels, dashboards, and portals
-- REST API integrations and reliable data flows
+### 🎨 Brand &amp; creative
+Identity systems, landing pages, social and campaign creative, AI-assisted video. Built to be remembered, then measured.
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
-### Creative Systems
+### ⚙️ Product engineering
+Next.js and React front ends, Node.js APIs, Supabase / Postgres with row-level security, admin panels, bilingual RTL interfaces.
 
-- MR GFX-style brand and visual direction
-- Landing pages and SEO-ready pages
-- UI/UX for business workflows
-- AI content and productivity systems
-- Telegram bots and workflow automation
-- Launch, GitHub, Vercel, and production handoff
+</td>
+<td width="33%" valign="top">
+
+### 🤖 Automation &amp; growth
+Telegram bots, booking and reminder flows, AI content pipelines, SEO and GEO, performance marketing tied to real numbers.
 
 </td>
 </tr>
 </table>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
-## Toolbox
+## 🛠 Toolbox
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,next,nodejs,express,tailwind,html,css,git,github,vercel,firebase,supabase,mongodb,postgres,docker,figma,wordpress&perline=10" alt="Technology stack icons" />
+<img src="https://skillicons.dev/icons?i=ts,js,react,next,nodejs,express,tailwind,html,css,py,supabase,postgres,firebase,docker,git,github,vercel,figma&perline=9" alt="Technology icons" />
 
-<br />
-<br />
+<br /><br />
 
-<img src="https://img.shields.io/badge/AI%20APIs-111827?style=for-the-badge&logo=openai&logoColor=22D3EE" alt="AI APIs" />
-<img src="https://img.shields.io/badge/REST%20APIs-0891B2?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST APIs" />
-<img src="https://img.shields.io/badge/Telegram%20Bots-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Bots" />
-<img src="https://img.shields.io/badge/UI%2FUX-7C3AED?style=for-the-badge&logo=figma&logoColor=white" alt="UI UX" />
-<img src="https://img.shields.io/badge/SEO-16A34A?style=for-the-badge&logo=google&logoColor=white" alt="SEO" />
+<img src="https://img.shields.io/badge/Claude%20%26%20AI%20APIs-0A0A0E?style=flat-square&logo=anthropic&logoColor=C4FF47" alt="AI APIs" />
+<img src="https://img.shields.io/badge/MCP%20servers-0A0A0E?style=flat-square&logoColor=C4FF47" alt="MCP" />
+<img src="https://img.shields.io/badge/Telegram%20bots-0A0A0E?style=flat-square&logo=telegram&logoColor=C4FF47" alt="Telegram" />
+<img src="https://img.shields.io/badge/next--intl%20AR%2FEN-0A0A0E?style=flat-square&logoColor=C4FF47" alt="next-intl" />
+<img src="https://img.shields.io/badge/SEO%20%2B%20GEO-0A0A0E?style=flat-square&logo=googlesearchconsole&logoColor=C4FF47" alt="SEO and GEO" />
+<img src="https://img.shields.io/badge/Playwright%20%2B%20Vitest-0A0A0E?style=flat-square&logo=playwright&logoColor=C4FF47" alt="Testing" />
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt="" />
 
-## Featured Focus
+## 🚀 Things I've shipped
+
+| Project | What it is |
+| --- | --- |
+| [**mr-gfx.com**](https://mr-gfx.com) | This portfolio. Next.js, bilingual AR/EN with RTL, static generation, a booking system with reminders, and an admin app. Accessibility and performance tested. |
+| [**Mashhor Hub**](https://mashhor-hub.com) | Growth engine and platform for Gulf brands. |
+| [**Work Zone**](https://zone.mashhor-hub.com) | Team work and task management. |
+| [**Mashhor AI**](https://mashhor.io) | AI tooling for business workflows. |
+| [**Munjiz**](https://munjiz-eg.com) | Productized service built for the Egyptian market. |
+
+Client work stays private by default. If we collaborate, relevant case studies are shared on request.
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🧭 How I work
 
 ```mermaid
 flowchart LR
-  A[Idea] --> B[Brand + UX]
-  B --> C[Frontend]
-  C --> D[Backend + Database]
-  D --> E[Automation + AI]
-  E --> F[Deploy + Improve]
+  A[Brief] --> B[Brand + UX]
+  B --> C[Build]
+  C --> D[Automate]
+  D --> E[Measure]
+  E --> F[Improve]
+  F -.-> B
 ```
 
-- I prefer small, safe, production-ready changes over noisy rewrites.
-- I care about clean UI states: loading, empty, success, error, and edge cases.
-- I build with security in mind: secrets, sessions, uploads, permissions, and admin routes.
-- I keep business value visible: performance, SEO, reliability, and maintainability.
+- **Small, safe, shippable.** Production-ready steps over noisy rewrites.
+- **Every state designed.** Loading, empty, error, success, and the edge cases between.
+- **Secure by default.** Row-level security, signed links, rate limits, no secrets in code.
+- **Honest numbers.** No invented metrics, no decorative claims.
 
----
-
-## Numbers
+<img src="assets/divider.svg" width="100%" alt="" />
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=mr-socialmedia&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&custom_title=GitHub%20Stats" alt="GitHub stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mr-socialmedia&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
+### Have something worth building?
 
-<br />
-<br />
-
-<img src="https://streak-stats.demolab.com?user=mr-socialmedia&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub contribution streak" />
-
-</div>
-
----
-
-## Contribution Graph
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mr-socialmedia&theme=react-dark&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Contribution activity graph" />
-
-</div>
-
----
-
-## Current Direction
-
-```txt
-MR GFX       -> creative digital identity, design, and web presence
-Engineering  -> Next.js, APIs, databases, dashboards, deployment
-Automation   -> AI workflows, Telegram bots, CRM-style operations
-Quality      -> secure defaults, clean UX, performance, maintainability
-```
-
-<div align="center">
-
-### Let us build something sharp.
-
-<a href="https://www.mr-gfx.com"><img src="https://img.shields.io/badge/Visit%20MR%20GFX-22D3EE?style=for-the-badge&logo=google-chrome&logoColor=0F172A" alt="Visit MR GFX" /></a>
-<a href="mailto:hello@mr-gfx.com"><img src="https://img.shields.io/badge/Start%20a%20Project-FFFFFF?style=for-the-badge&logo=gmail&logoColor=0F172A" alt="Start a project" /></a>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:22D3EE,50:0891B2,100:0F172A" alt="Animated footer" />
+<a href="https://mr-gfx.com/en/book"><img src="https://img.shields.io/badge/Book%20a%20consultation-C4FF47?style=for-the-badge&logo=googlecalendar&logoColor=0A0A0E" alt="Book a consultation" /></a>
+<a href="https://mr-gfx.com/ar"><img src="https://img.shields.io/badge/الموقع%20بالعربية-0A0A0E?style=for-the-badge&logoColor=C4FF47" alt="الموقع بالعربية" /></a>
 
 </div>

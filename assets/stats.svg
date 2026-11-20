@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-label="10+ years, 1000+ projects, 250+ clients">
+  <style>
+    .n{font:800 52px Inter,'Segoe UI',Arial,sans-serif;fill:#c4ff47;text-anchor:middle}
+    .t{font:600 16px Inter,'Segoe UI',Arial,sans-serif;fill:#a6a6ad;text-anchor:middle;letter-spacing:2px}
+    .card{fill:#0d0e12;stroke:#2a2c33}
+    .c{opacity:0;animation:in .8s ease-out forwards}.c2{animation-delay:.2s}.c3{animation-delay:.4s}
+    @keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){.c{animation:none;opacity:1}}
+  </style>
+  <g class="c"><rect class="card" x="10" y="10" width="270" height="130" rx="18"/><text class="n" x="145" y="82">10+</text><text class="t" x="145" y="115">YEARS</text></g>
+  <g class="c c2"><rect class="card" x="315" y="10" width="270" height="130" rx="18"/><text class="n" x="450" y="82">1000+</text><text class="t" x="450" y="115">PROJECTS</text></g>
+  <g class="c c3"><rect class="card" x="620" y="10" width="270" height="130" rx="18"/><text class="n" x="755" y="82">250+</text><text class="t" x="755" y="115">CLIENTS</text></g>
+</svg>
