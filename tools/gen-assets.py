@@ -47,7 +47,7 @@ lines = [  # list of (colour, text) segments per line
     [('s', '> '), ('k', 'Brand · Web · AI automation')],
     [('s', '✓ '), ('k', '10+ years · 1000+ projects')],
     [('s', '✓ '), ('k', '250+ clients · Gulf & Egypt')],
-    [('s', '✓ '), ('k', 'Next.js · Supabase · Node.js')],
+    [('s', '✓ '), ('k', 'Websites · Apps · Dashboards')],
     [('s', '✓ '), ('k', 'SEO · GEO · AI videos')],
     [('s', '→ '), ('w', 'www.mr-gfx.com')],
 ]
