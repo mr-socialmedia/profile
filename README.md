@@ -60,22 +60,64 @@ Telegram bots, booking and reminder flows, AI content pipelines, SEO and GEO, pe
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## 🛠 Toolbox
+## 🧭 Experience
 
 <div align="center">
-
-<img src="https://skillicons.dev/icons?i=ts,js,react,next,nodejs,express,tailwind,html,css,py,supabase,postgres,firebase,docker,git,github,vercel,figma&perline=9" alt="Technology icons" />
-
-<br /><br />
-
-<img src="https://img.shields.io/badge/Claude%20%26%20AI%20APIs-0A0A0E?style=flat-square&logo=anthropic&logoColor=C4FF47" alt="AI APIs" />
-<img src="https://img.shields.io/badge/MCP%20servers-0A0A0E?style=flat-square&logoColor=C4FF47" alt="MCP" />
-<img src="https://img.shields.io/badge/Telegram%20bots-0A0A0E?style=flat-square&logo=telegram&logoColor=C4FF47" alt="Telegram" />
-<img src="https://img.shields.io/badge/next--intl%20AR%2FEN-0A0A0E?style=flat-square&logoColor=C4FF47" alt="next-intl" />
-<img src="https://img.shields.io/badge/SEO%20%2B%20GEO-0A0A0E?style=flat-square&logo=googlesearchconsole&logoColor=C4FF47" alt="SEO and GEO" />
-<img src="https://img.shields.io/badge/Playwright%20%2B%20Vitest-0A0A0E?style=flat-square&logo=playwright&logoColor=C4FF47" alt="Testing" />
-
+<img src="assets/experience.svg" width="100%" alt="Experience timeline: Founder of Munjiz in Cairo; Founder and CEO of Mashhor Hub in Kuwait; Marketing Specialist at RAprime and Prime Media; Agency Manager at Media Life; Social Media Specialist at Al-Dawaeya Pharmacies; Senior Graphic Designer at Pharma Life; Content Creator and News Editor at Al-Shahed TV." />
 </div>
+
+Ten years, one layer at a time: media, design, social and agencies, marketing, then products and AI. I learned each layer by doing it, so I know how the pieces fit.
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🧠 Skills
+
+<div align="center">
+<img src="assets/skills.svg" width="100%" alt="Skills. Programming: Next.js, React, TypeScript, Node.js, Express, Python, Tailwind CSS, Expo and React Native, PostgreSQL, Supabase, Firebase, SQLite, Playwright, Vitest. AI and automation: Claude and OpenAI APIs, Gemini API, MCP servers, Make, n8n, prompt workflows, CRM automation, Telegram bots. Marketing: performance marketing, media buying, influencer marketing, SEO, GEO, positioning. Creative: brand identity, graphic design, video production, AI videos, campaign concepts, content writing." />
+</div>
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🧰 Platforms &amp; tools
+
+<div align="center">
+<img src="assets/platforms.svg" width="100%" alt="Platforms and tools: Meta, Snapchat, TikTok, Google, Google Ads, Google Analytics, OpenAI, Claude, Gemini, Perplexity, Canva, Make, n8n, Zapier, HubSpot." />
+</div>
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 💻 How I code
+
+I build with AI in the loop (vibe coding), then hold the result to an engineering bar: types, tests, security and performance. Speed comes from the tools, trust comes from the checks.
+
+```ts
+const howIBuild = {
+  stack: {
+    web:      ["Next.js", "React", "TypeScript", "Tailwind CSS", "next-intl (AR/EN, RTL)"],
+    backend:  ["Node.js", "Express", "Python", "PostgreSQL (Supabase, RLS)", "SQLite"],
+    mobile:   ["Expo", "React Native"],
+    ai:       ["Claude", "OpenAI", "Gemini", "Model Context Protocol"],
+    quality:  ["Vitest", "Playwright", "axe", "Lighthouse"],
+  },
+  principles: [
+    "every state designed: loading, empty, error, success",
+    "secure by default: row-level security, signed links, rate limits",
+    "bilingual from day one: Arabic RTL is not an afterthought",
+    "measured: accessibility and performance are tested, not assumed",
+  ],
+  shipped: ["mr-gfx.com", "owner app (Expo)", "Mashhor Quran MCP", "Work Tracker Agent"],
+} as const;
+```
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🎓 Certifications
+
+<div align="center">
+<img src="assets/certifications.svg" width="100%" alt="Certifications: OpenAI Agents and Workflows; Google Gemini Certified Educator and Faculty; Meta Blueprint incl. Ads Manager; Google Ads Display; Anthropic Claude 101 and Academy courses; Canva Design School; Snap Brand Safety; IBM SkillsBuild; Dubai Future Foundation One Million Prompters; Training of Trainers. Plus 25 more on LinkedIn." />
+</div>
+
+<div align="center"><a href="https://www.linkedin.com/in/mohamedreda-gfx/"><img src="https://img.shields.io/badge/Full%20list%20on%20LinkedIn-0A0A0E?style=for-the-badge&logo=linkedin&logoColor=C4FF47" alt="Full certification list on LinkedIn" /></a></div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
@@ -83,17 +125,18 @@ Telegram bots, booking and reminder flows, AI content pipelines, SEO and GEO, pe
 
 | Project | What it is |
 | --- | --- |
-| [**mr-gfx.com**](https://mr-gfx.com) | This portfolio. Next.js, bilingual AR/EN with RTL, static generation, a booking system with reminders, and an admin app. Accessibility and performance tested. |
-| [**Mashhor Hub**](https://mashhor-hub.com) | Growth engine and platform for Gulf brands. |
-| [**Work Zone**](https://zone.mashhor-hub.com) | Team work and task management. |
-| [**Mashhor AI**](https://mashhor.io) | AI tooling for business workflows. |
-| [**Munjiz**](https://munjiz-eg.com) | Productized service built for the Egyptian market. |
+| [**mr-gfx.com**](https://mr-gfx.com) | This portfolio. Next.js, bilingual AR/EN with RTL, static generation, a booking system with reminders, and an owner app. Accessibility and performance tested. |
+| [**Mashhor Hub**](https://mashhor-hub.com) | Influencer-marketing platform connecting GCC brands with talent. Founder and CEO: positioning, brand system, launch and campaign workflow. |
+| [**Mashhor App**](https://mashhor-hub.com/app/) | An app for booking celebrities and influencers across the Arab world. |
+| [**Mashhor AI**](https://mashhor.io) | AI-powered SaaS platform for influencer discovery, analytics and campaign management. |
+| [**Work Zone**](https://zone.mashhor-hub.com) | AI-powered workspace for agencies, marketing firms and companies to manage and organise tasks. |
+| [**Munjiz**](https://munjiz-eg.com) | Egyptian government-services e-platform built from zero: identity, website, communication flow and service offer. |
 
 Client work stays private by default. If we collaborate, relevant case studies are shared on request.
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## 🧭 How I work
+## 🔁 How I work
 
 ```mermaid
 flowchart LR
