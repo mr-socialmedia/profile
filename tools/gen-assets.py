@@ -30,9 +30,11 @@ logo = open(os.path.join(HERE, 'm-mark.svg')).read()
 inner = re.search(r'<svg[^>]*>(.*)</svg>', logo, re.S).group(1).replace('id="tl"', 'id="lt"').replace('url(#tl)', 'url(#lt)')
 
 RIGHT = 936  # names end here, next to the logo on the right
-_, nw = shape('syne.woff2', 800, 'Mohamed Reda', 26, 0, 0, 1)
-name, _ = shape('syne.woff2', 800, 'Mohamed Reda', 26, RIGHT - nw, 214, 1)
 _, aw = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, 0, 0)
+_, nw0 = shape('syne.woff2', 800, 'Mohamed Reda', 26, 0, 0, 0)
+LS = 1.5                      # letter-spacing; the font size is then chosen so both names have exactly the same width
+FSL = 26 * (aw - 11 * LS) / nw0
+name, _ = shape('syne.woff2', 800, 'Mohamed Reda', FSL, RIGHT - aw, 214, LS)
 ar, _ = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, RIGHT - aw, 172)
 
 # ---- terminal: the information, typed like code ----
@@ -40,15 +42,18 @@ MONO, CW, FS = 'JetBrainsMono-Bold.ttf', 9.0, 15
 C = {'k': '#e8e9ec', 'p': '#7d818c', 's': '#c4ff47', 'c': '#7d818c', 'w': '#ffffff'}
 lines = [  # list of (colour, text) segments per line
     [('c', '// vibe coding')],
-    [('p', '$ '), ('w', 'vibe '), ('s', '"premium bilingual site"')],
-    [('s', '✓ '), ('k', 'brand + design system')],
-    [('s', '✓ '), ('k', 'web · api · database')],
-    [('s', '✓ '), ('k', 'ai · bots · automation')],
-    [('s', '→ '), ('w', 'live '), ('p', '· Kuwait · AR / EN')],
+    [('p', '$ '), ('w', 'whoami')],
+    [('s', '> '), ('k', 'Full-stack developer')],
+    [('s', '> '), ('k', 'Brand · Web · AI automation')],
+    [('s', '✓ '), ('k', '10+ years · 1000+ projects')],
+    [('s', '✓ '), ('k', '250+ clients · Gulf & Egypt')],
+    [('s', '✓ '), ('k', 'Next.js · Supabase · Node.js')],
+    [('s', '✓ '), ('k', 'SEO · GEO · AI videos')],
+    [('s', '→ '), ('w', 'www.mr-gfx.com')],
 ]
-TX, TY, LH = 86, 112, 27       # text origin inside the card
-TOTAL = 16.0                    # seconds per loop
-STEP = 1.55                     # seconds each line takes to type
+TX, TY, LH = 86, 94, 25       # text origin inside the card
+TOTAL = 19.0                    # seconds per loop
+STEP = 1.5                     # seconds each line takes to type
 paths, css = '', ''
 for i, segs in enumerate(lines):
     n = sum(len(t) for _, t in segs); x = TX; y = TY + i * LH
@@ -121,8 +126,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" view
 </g>
 <g class="name"><path d="{name}" fill="#cfd2d8"/></g>
 <g class="ar"><path d="{ar}" fill="#ffffff"/></g>
-<g transform="translate(58 52)">
- <rect width="330" height="236" rx="16" fill="#07080b" fill-opacity=".88" stroke="#c4ff47" stroke-opacity=".3"/>
+<g transform="translate(58 34)">
+ <rect width="330" height="272" rx="16" fill="#07080b" fill-opacity=".88" stroke="#c4ff47" stroke-opacity=".3"/>
  <circle cx="22" cy="22" r="5" fill="#ff5f56"/><circle cx="40" cy="22" r="5" fill="#ffbd2e"/><circle cx="58" cy="22" r="5" fill="#c4ff47"/>
 </g>
 <g transform="translate(-0 0)">{paths}{cur}</g>
