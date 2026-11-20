@@ -63,7 +63,7 @@ Telegram bots, booking and reminder flows, AI content pipelines, SEO and GEO, pe
 ## 🧭 Experience
 
 <div align="center">
-<img src="assets/experience.svg" width="100%" alt="Experience timeline: Marketing and AI Specialist at Al-Nawadi Holding; Founder of Munjiz in Cairo; Founder and CEO of Mashhor Hub in Kuwait; Marketing Specialist at RAprime and Prime Media; Agency Manager at Media Life; Social Media Specialist at Al-Dawaeya Pharmacies; Senior Graphic Designer at Pharma Life; Content Creator and News Editor at Al-Shahed TV." />
+<img src="assets/experience.svg" width="100%" alt="Experience timeline: Founder of Munjiz in Cairo; Founder and CEO of Mashhor Hub in Kuwait; Marketing Specialist at RAprime and Prime Media; Agency Manager at Media Life; Social Media Specialist at Al-Dawaeya Pharmacies; Senior Graphic Designer at Pharma Life; Content Creator and News Editor at Al-Shahed TV." />
 </div>
 
 Ten years, one layer at a time: media, design, social and agencies, marketing, then products and AI. I learned each layer by doing it, so I know how the pieces fit.
@@ -74,6 +74,14 @@ Ten years, one layer at a time: media, design, social and agencies, marketing, t
 
 <div align="center">
 <img src="assets/skills.svg" width="100%" alt="Skills. Programming: Next.js, React, TypeScript, Node.js, Express, Python, Tailwind CSS, Expo and React Native, PostgreSQL, Supabase, Firebase, SQLite, Playwright, Vitest. AI and automation: Claude and OpenAI APIs, Gemini API, MCP servers, Make, n8n, prompt workflows, CRM automation, Telegram bots. Marketing: performance marketing, media buying, influencer marketing, SEO, GEO, positioning. Creative: brand identity, graphic design, video production, AI videos, campaign concepts, content writing." />
+</div>
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🧰 Platforms &amp; tools
+
+<div align="center">
+<img src="assets/platforms.svg" width="100%" alt="Platforms and tools: Meta, Snapchat, TikTok, Google, Google Ads, Google Analytics, OpenAI, Claude, Gemini, Perplexity, Canva, Make, n8n, Zapier, HubSpot." />
 </div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
@@ -100,6 +108,16 @@ const howIBuild = {
   shipped: ["mr-gfx.com", "owner app (Expo)", "Mashhor Quran MCP", "Work Tracker Agent"],
 } as const;
 ```
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🎓 Certifications
+
+<div align="center">
+<img src="assets/certifications.svg" width="100%" alt="Certifications: OpenAI Agents and Workflows; Google Gemini Certified Educator and Faculty; Meta Blueprint incl. Ads Manager; Google Ads Display; Anthropic Claude 101 and Academy courses; Canva Design School; Snap Brand Safety; IBM SkillsBuild; Dubai Future Foundation One Million Prompters; Training of Trainers. Plus 25 more on LinkedIn." />
+</div>
+
+<div align="center"><a href="https://www.linkedin.com/in/mohamedreda-gfx/"><img src="https://img.shields.io/badge/Full%20list%20on%20LinkedIn-0A0A0E?style=for-the-badge&logo=linkedin&logoColor=C4FF47" alt="Full certification list on LinkedIn" /></a></div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 

@@ -167,8 +167,7 @@ def panel_open(w, h, label):
             f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="21.5" fill="none" stroke="#c4ff47" stroke-opacity=".28"/>')
 
 # ---- experience timeline (data: mr-gfx.com about page) ----
-EXP = [('Jul 2026 – now', 'Marketing & AI Specialist', 'Al-Nawadi Holding'),
-       ('2025 – now', 'Founder', 'Munjiz · Cairo'),
+EXP = [('2025 – now', 'Founder', 'Munjiz · Cairo'),
        ('2024 – now', 'Founder & CEO', 'Mashhor Hub LLC · Kuwait'),
        ('Jan 2023 – Jun 2026', 'Marketing Specialist', 'RAprime & Prime Media'),
        ('Apr 2022 – Aug 2023', 'Agency Manager', 'Media Life Advertising & Marketing'),
@@ -245,3 +244,52 @@ open(os.path.join(OUT, 'divider.svg'), 'w').write('''<svg xmlns="http://www.w3.o
 <rect y="9" width="1200" height="2" fill="url(#g)"/>
 <circle cy="10" r="5.5" fill="#c4ff47" stroke="#07080b" stroke-width="2"><animate attributeName="cx" values="0;1200" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="5s" repeatCount="indefinite"/></circle></svg>''')
 print('panels ok')
+
+# ---- platforms & tools (icons from the mr-gfx.com icon set) ----
+def icon(name, x, y, size):
+    raw = open(os.path.join(HERE, 'icons', name + '.svg')).read()
+    fill = re.search(r'fill="(#[0-9A-Fa-f]{6})"', raw).group(1)
+    paths = ''.join(re.findall(r'<path[^>]*/>', raw))
+    paths = re.sub(r'<path ', f'<path fill="{fill}" ', paths)
+    return f'<g transform="translate({x} {y}) scale({size / 24})">{paths}</g>'
+TOOLS = [('meta', 'Meta'), ('snapchat', 'Snapchat'), ('tiktok', 'TikTok'), ('google', 'Google'), ('googleads', 'Google Ads'),
+         ('googleanalytics', 'Analytics'), ('openai', 'OpenAI'), ('claude', 'Claude'), ('gemini', 'Gemini'), ('perplexity', 'Perplexity'),
+         ('canva', 'Canva'), ('make', 'Make'), ('n8n', 'n8n'), ('zapier', 'Zapier'), ('hubspot', 'HubSpot')]
+W, COLS, TW, TH, G, PAD = 1000, 5, 176, 104, 14, 44
+rows = (len(TOOLS) + COLS - 1) // COLS; H = 84 + rows * (TH + G) + 14
+t, _ = shape('syne.woff2', 800, 'PLATFORMS & TOOLS I WORK WITH', 15, PAD, 46, 4)
+body = f'<path d="{t}" fill="#c4ff47"/>'
+for i, (ic, label) in enumerate(TOOLS):
+    r, c = divmod(i, COLS); x = PAD + c * (TW + G); y = 74 + r * (TH + G)
+    lp, lw = shape('outfit.woff2', 600, label, 16, 0, 0); lp, _ = shape('outfit.woff2', 600, label, 16, x + TW / 2 - lw / 2, y + TH - 18)
+    body += (f'<g class="in" style="animation-delay:{i * .06:.2f}s"><rect x="{x}" y="{y}" width="{TW}" height="{TH}" rx="16" fill="#10140c" stroke="#c4ff47" stroke-opacity=".3"/>'
+             f'{icon(ic, x + TW / 2 - 21, y + 16, 42)}<path d="{lp}" fill="#e9ecf1"/></g>')
+open(os.path.join(OUT, 'platforms.svg'), 'w').write(panel_open(W, H, 'Platforms and tools: ' + ', '.join(l for _, l in TOOLS)) + body + '</svg>')
+
+# ---- certifications (data: mr-gfx.com certifications page) ----
+CERTS = [('openai', 'OpenAI', 'Agents and Workflows'),
+         ('google', 'Google', 'Gemini Certified Educator and Faculty'),
+         ('meta', 'Meta Blueprint', 'Credentials, incl. Ads Manager'),
+         ('googleads', 'Google Skillshop', 'Google Ads Display Certification'),
+         ('claude', 'Anthropic', 'Claude 101 and Anthropic Academy courses'),
+         ('canva', 'Canva Design School', 'Design essentials and marketing with Canva'),
+         ('snapchat', 'Snap', 'Brand Safety'),
+         (None, 'IBM SkillsBuild', 'AI and data courses, incl. IBM Granite'),
+         (None, 'Dubai Future Foundation', 'One Million Prompters'),
+         (None, 'Training of Trainers (TOT)', 'Three certificates')]
+W, CW, CH, G, PAD = 1000, 446, 84, 18, 44
+rows = (len(CERTS) + 1) // 2; H = 84 + rows * (CH + G) + 56
+t, _ = shape('syne.woff2', 800, 'CERTIFICATIONS', 15, PAD, 46, 4)
+body = f'<path d="{t}" fill="#c4ff47"/>'
+for i, (ic, issuer, title) in enumerate(CERTS):
+    r, c = divmod(i, 2); x = PAD + c * (CW + G); y = 70 + r * (CH + G)
+    ip, _ = shape('syne.woff2', 700, issuer, 17, x + 84, y + 34); tp, _ = shape('outfit.woff2', 400, title, 16, x + 84, y + 60)
+    mark = icon(ic, x + 22, y + 22, 40) if ic else (f'<circle cx="{x + 42}" cy="{y + 42}" r="20" fill="none" stroke="#c4ff47" stroke-opacity=".6" stroke-width="2"/>'
+                                                  f'<path d="M{x + 33} {y + 42}l7 7 12-14" fill="none" stroke="#c4ff47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
+    body += (f'<g class="in" style="animation-delay:{i * .08:.2f}s"><rect x="{x}" y="{y}" width="{CW}" height="{CH}" rx="16" fill="#10140c" stroke="#c4ff47" stroke-opacity=".3"/>'
+             f'{mark}<path d="{ip}" fill="#ffffff"/><path d="{tp}" fill="#a9afb9"/></g>')
+mp, mw = shape('outfit.woff2', 500, '+ 25 more credentials on LinkedIn', 17, 0, 0)
+mp, _ = shape('outfit.woff2', 500, '+ 25 more credentials on LinkedIn', 17, W / 2 - mw / 2, H - 26)
+body += f'<g class="in" style="animation-delay:1s"><path d="{mp}" fill="#c4ff47"/></g>'
+open(os.path.join(OUT, 'certifications.svg'), 'w').write(panel_open(W, H, 'Certifications: ' + '; '.join(f'{i}: {t}' for _, i, t in CERTS)) + body + '</svg>')
+print('tools+certs ok')
