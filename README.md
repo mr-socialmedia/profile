@@ -136,6 +136,15 @@ Client work stays private by default. If we collaborate, relevant case studies a
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
+## 🧪 Open source
+
+| Repository | What it does |
+| --- | --- |
+| [**mashhor-quran-mcp**](https://github.com/mr-socialmedia/mashhor-quran-mcp) | A Model Context Protocol server that gives Claude, ChatGPT and other MCP clients read-only Quran tools: surahs, reciters, verses, Arabic-aware search, prayer times, live radio and the Hijri date. Node.js, Express, Zod. ISC licence. |
+| [**Marketing-System**](https://github.com/mr-socialmedia/Marketing-System) | Work Tracker Agent: a Windows agent that turns real work activity into daily, weekly and monthly reports without behaving like surveillance software. Raw activity never leaves the device. Python, SQLite. |
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
 ## 🔁 How I work
 
 ```mermaid
@@ -155,11 +164,33 @@ flowchart LR
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
+## 🌍 بالعربي
+
+<div dir="rtl">
+
+أنا **محمد رضا**، صاحب **MR GFX**. أعمل بين الكويت ومصر ودول الخليج، وأجمع التموضع والتنفيذ الإبداعي وشراء الإعلانات وأنظمة الذكاء الاصطناعي والبرمجة في مكان واحد. خلال أكثر من عشر سنوات ساعدت شركات ناشئة ومطورين وعلامات أغذية ومشروبات وصيدليات وفرقًا مؤسسية على تحويل تسويق متفرق إلى أنظمة نمو أوضح وأكثر ربحية.
+
+أبني مواقع ومنصات ولوحات تحكم وبوتات وأتمتة، وأؤسس منتجاتي الخاصة مثل مشهور هب ومنجز. أعمال العملاء تبقى سرية افتراضيًا، وتُشارك دراسات الحالة المناسبة عند الطلب.
+
+</div>
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 📬 Let's talk
+
 <div align="center">
 
 ### Have something worth building?
 
 <a href="https://mr-gfx.com/en/book"><img src="https://img.shields.io/badge/Book%20a%20consultation-C4FF47?style=for-the-badge&logo=googlecalendar&logoColor=0A0A0E" alt="Book a consultation" /></a>
 <a href="https://mr-gfx.com/ar"><img src="https://img.shields.io/badge/الموقع%20بالعربية-0A0A0E?style=for-the-badge&logoColor=C4FF47" alt="الموقع بالعربية" /></a>
+
+<br />
+
+<a href="https://wa.me/96565099769"><img src="https://img.shields.io/badge/WhatsApp-0A0A0E?style=flat-square&logo=whatsapp&logoColor=C4FF47" alt="WhatsApp" /></a>
+<a href="https://www.linkedin.com/in/mohamedreda-gfx/"><img src="https://img.shields.io/badge/LinkedIn-0A0A0E?style=flat-square&logo=linkedin&logoColor=C4FF47" alt="LinkedIn" /></a>
+<a href="https://instagram.com/mohamedr.ai"><img src="https://img.shields.io/badge/Instagram-0A0A0E?style=flat-square&logo=instagram&logoColor=C4FF47" alt="Instagram" /></a>
+<a href="https://github.com/mr-socialmedia"><img src="https://img.shields.io/badge/GitHub-0A0A0E?style=flat-square&logo=github&logoColor=C4FF47" alt="GitHub" /></a>
+<a href="https://mr-gfx.com"><img src="https://img.shields.io/badge/mr--gfx.com-0A0A0E?style=flat-square&logo=googlechrome&logoColor=C4FF47" alt="Website" /></a>
 
 </div>
