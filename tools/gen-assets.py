@@ -147,3 +147,101 @@ open(os.path.join(OUT, 'stats.svg'), 'w').write(f'''<svg xmlns="http://www.w3.or
 <style>.card{{fill:#0d0e12;stroke:#c4ff47;stroke-opacity:.22}}.c{{opacity:0;animation:in .8s ease-out forwards}}.c2{{animation-delay:.2s}}.c3{{animation-delay:.4s}}@keyframes in{{from{{opacity:0;transform:translateY(14px)}}to{{opacity:1;transform:none}}}}@media (prefers-reduced-motion:reduce){{.c{{animation:none;opacity:1}}}}</style>
 {g}</svg>''')
 print('ok')
+
+# =====================================================================================================
+# Panels for the README. Every image has its own dark background, so it reads on GitHub's light and dark themes.
+# =====================================================================================================
+def esc(t): return t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+PANEL_CSS = '''<style>
+.in{opacity:0;animation:in .7s cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pu 2.6s ease-in-out infinite}@keyframes pu{50%{transform:scale(1.7);opacity:.35}}
+.grow{transform-box:fill-box;transform-origin:top;animation:gr 1.6s cubic-bezier(.2,.9,.2,1) both}@keyframes gr{from{transform:scaleY(0)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.in{opacity:1}}
+</style>'''
+def panel_open(w, h, label):
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(label)}">'
+            f'<defs><linearGradient id="pb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080b"/><stop offset="1" stop-color="#0d130a"/></linearGradient>'
+            f'<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c4ff47" fill-opacity=".09"/></pattern></defs>{PANEL_CSS}'
+            f'<rect width="{w}" height="{h}" rx="22" fill="url(#pb)"/><rect width="{w}" height="{h}" rx="22" fill="url(#dots)"/>'
+            f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="21.5" fill="none" stroke="#c4ff47" stroke-opacity=".28"/>')
+
+# ---- experience timeline (data: mr-gfx.com about page) ----
+EXP = [('Jul 2026 – now', 'Marketing & AI Specialist', 'Al-Nawadi Holding'),
+       ('2025 – now', 'Founder', 'Munjiz · Cairo'),
+       ('2024 – now', 'Founder & CEO', 'Mashhor Hub LLC · Kuwait'),
+       ('Jan 2023 – Jun 2026', 'Marketing Specialist', 'RAprime & Prime Media'),
+       ('Apr 2022 – Aug 2023', 'Agency Manager', 'Media Life Advertising & Marketing'),
+       ('Jan 2021 – May 2023', 'Social Media Specialist', 'Al-Dawaeya Pharmacies'),
+       ('Dec 2019 – Jan 2021', 'Senior Graphic Designer', 'Pharma Life'),
+       ('2018 – 2020', 'Content Creator & News Editor', 'Al-Shahed TV')]
+W, RH, TOP = 1000, 62, 92
+H = TOP + len(EXP) * RH + 26
+t, _ = shape('syne.woff2', 800, 'EXPERIENCE', 15, 44, 46, 4)
+s = panel_open(W, H, 'Experience: ' + '; '.join(f'{r}, {o}, {p}' for p, r, o in EXP)) + f'<path d="{t}" fill="#c4ff47"/>'
+s += f'<rect class="grow" x="305" y="{TOP - 8}" width="2" height="{len(EXP) * RH - 24}" fill="#c4ff47" fill-opacity=".35"/>'
+for i, (per, role, org) in enumerate(EXP):
+    y = TOP + i * RH; d = f'style="animation-delay:{.15 + i * .18:.2f}s"'
+    pp, pw = shape('outfit.woff2', 500, per, 17, 0, 0); pp, _ = shape('outfit.woff2', 500, per, 17, 280 - pw, y + 6)
+    rr, _ = shape('syne.woff2', 700, role, 21, 336, y + 4)
+    oo, _ = shape('outfit.woff2', 400, org, 17, 336, y + 30)
+    live = 'now' in per
+    s += (f'<g class="in" {d}><path d="{pp}" fill="{"#c4ff47" if live else "#9aa0aa"}"/>'
+          f'<circle cx="306" cy="{y}" r="6" fill="#07080b" stroke="#c4ff47" stroke-width="2"/>'
+          + (f'<circle class="pulse" cx="306" cy="{y}" r="3.5" fill="#c4ff47"/>' if live else '')
+          + f'<path d="{rr}" fill="#ffffff"/><path d="{oo}" fill="#a9afb9"/></g>')
+# right column: education and languages (from the about page)
+side = [('EDUCATION', ["Bachelor's in Accounting", 'Faculty of Commerce, Cairo University', 'English section · 2014 – 2017']),
+        ('LANGUAGES', ['Arabic · native', 'English · professional']),
+        ('BASE', ['Kuwait · Egypt · the Gulf'])]
+yy = TOP - 8
+for j, (hd, ls) in enumerate(side):
+    hp, _ = shape('syne.woff2', 800, hd, 13, 700, yy, 3); blk = f'<path d="{hp}" fill="#c4ff47"/>'
+    for n, ln in enumerate(ls):
+        lp, _ = shape('outfit.woff2', 500 if n == 0 else 400, ln, 17, 700, yy + 28 + n * 25)
+        blk += f'<path d="{lp}" fill="{"#ffffff" if n == 0 else "#a9afb9"}"/>'
+    s += f'<g class="in" style="animation-delay:{1.4 + j * .25:.2f}s">{blk}</g>'
+    yy += 28 + len(ls) * 25 + 34
+open(os.path.join(OUT, 'experience.svg'), 'w').write(s + '</svg>')
+
+# ---- skills (data: mr-gfx.com about + stack pages) ----
+GROUPS = [
+ ('PROGRAMMING', ['Next.js', 'React', 'TypeScript', 'Node.js', 'Express', 'Python', 'Tailwind CSS', 'Expo · React Native', 'PostgreSQL', 'Supabase', 'Firebase', 'SQLite', 'Playwright', 'Vitest']),
+ ('AI & AUTOMATION', ['Claude & OpenAI APIs', 'Gemini API', 'MCP servers', 'Make', 'n8n', 'Prompt workflows', 'CRM automation', 'Telegram bots']),
+ ('MARKETING', ['Performance marketing', 'Media buying', 'Influencer marketing', 'SEO', 'GEO', 'Positioning & offers']),
+ ('CREATIVE', ['Brand identity', 'Graphic design', 'Video production', 'AI videos', 'Campaign concepts', 'Content writing']),
+]
+W, PAD, CH, GAP = 1000, 44, 36, 10
+y = 46; body = ''; k = 0
+for title, items in GROUPS:
+    tt, _ = shape('syne.woff2', 800, title, 15, PAD, y, 4); body += f'<g class="in" style="animation-delay:{k * .05:.2f}s"><path d="{tt}" fill="#c4ff47"/></g>'
+    y += 22; x = PAD
+    for it in items:
+        _, w = shape('outfit.woff2', 600, it, 16, 0, 0); cw = w + 30
+        if x + cw > W - PAD: x = PAD; y += CH + GAP
+        p, _ = shape('outfit.woff2', 600, it, 16, x + 15, y + 23)
+        body += (f'<g class="in" style="animation-delay:{.1 + k * .06:.2f}s"><rect x="{x}" y="{y}" width="{cw:.1f}" height="{CH}" rx="{CH / 2}" fill="#10140c" stroke="#c4ff47" stroke-opacity=".38"/>'
+                 f'<path d="{p}" fill="#f2f4f7"/></g>')
+        x += cw + GAP; k += 1
+    y += CH + 34
+H = y - 8
+open(os.path.join(OUT, 'skills.svg'), 'w').write(panel_open(W, H, 'Skills: ' + '; '.join(f'{t}: ' + ', '.join(i) for t, i in GROUPS)) + body + '</svg>')
+
+# ---- tagline: own dark pill, readable on any GitHub theme ----
+tl = ['I build brands, sites, dashboards and automation.', 'Websites, apps, bots and AI workflows, built end to end.',
+      'Marketing and engineering under one roof.', 'Bilingual Arabic / English, RTL done right.']
+texts = ''; css = ''
+for i, line in enumerate(tl):
+    _, lw = shape(MONO, 700, line, 20, 0, 0); p, _ = shape(MONO, 700, line, 20, 450 - lw / 2, 33)
+    texts += f'<path class="l l{i}" d="{p}" fill="#c4ff47"/>'; css += f'.l{i}{{animation-delay:{i * 3}s}}'
+open(os.path.join(OUT, 'tagline.svg'), 'w').write(f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="52" viewBox="0 0 900 52" role="img" aria-label="{esc(' '.join(tl))}">
+<style>.l{{opacity:0;animation:cy 12s infinite}}{css}@keyframes cy{{0%{{opacity:0;transform:translateY(8px)}}4%,22%{{opacity:1;transform:none}}27%,100%{{opacity:0;transform:translateY(-8px)}}}}@media (prefers-reduced-motion:reduce){{.l{{animation:none;opacity:0}}.l0{{opacity:1}}}}</style>
+<rect width="900" height="52" rx="26" fill="#07080b"/><rect x=".5" y=".5" width="899" height="51" rx="25.5" fill="none" stroke="#c4ff47" stroke-opacity=".4"/>
+<circle cx="30" cy="26" r="4" fill="#c4ff47"><animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/></circle>{texts}</svg>''')
+
+# ---- divider: mid green with a dark core, visible on white and on black ----
+open(os.path.join(OUT, 'divider.svg'), 'w').write('''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="20" viewBox="0 0 1200 20" aria-hidden="true">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7cb800" stop-opacity="0"/><stop offset=".5" stop-color="#7cb800"/><stop offset="1" stop-color="#7cb800" stop-opacity="0"/></linearGradient></defs>
+<rect y="9" width="1200" height="2" fill="url(#g)"/>
+<circle cy="10" r="5.5" fill="#c4ff47" stroke="#07080b" stroke-width="2"><animate attributeName="cx" values="0;1200" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="5s" repeatCount="indefinite"/></circle></svg>''')
+print('panels ok')
