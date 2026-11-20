@@ -29,9 +29,11 @@ def shape(name, wght, text, size, x, y, tracking=0):
 logo = open(os.path.join(HERE, 'm-mark.svg')).read()
 inner = re.search(r'<svg[^>]*>(.*)</svg>', logo, re.S).group(1).replace('id="tl"', 'id="lt"').replace('url(#tl)', 'url(#lt)')
 
-name, nw = shape('syne.woff2', 800, 'Mohamed Reda', 26, 266, 214, 1)
+RIGHT = 936  # names end here, next to the logo on the right
+_, nw = shape('syne.woff2', 800, 'Mohamed Reda', 26, 0, 0, 1)
+name, _ = shape('syne.woff2', 800, 'Mohamed Reda', 26, RIGHT - nw, 214, 1)
 _, aw = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, 0, 0)
-ar, _ = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, 266, 172)
+ar, _ = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, RIGHT - aw, 172)
 
 # ---- terminal: the information, typed like code ----
 MONO, CW, FS = 'JetBrainsMono-Bold.ttf', 9.0, 15
@@ -44,7 +46,7 @@ lines = [  # list of (colour, text) segments per line
     [('s', '✓ '), ('k', 'ai · bots · automation')],
     [('s', '→ '), ('w', 'live '), ('p', '· Kuwait · AR / EN')],
 ]
-TX, TY, LH = 850, 112, 27       # text origin inside the card
+TX, TY, LH = 86, 112, 27       # text origin inside the card
 TOTAL = 16.0                    # seconds per loop
 STEP = 1.55                     # seconds each line takes to type
 paths, css = '', ''
@@ -111,15 +113,15 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" view
 <g clip-path="url(#r)">
 <rect width="1200" height="340" fill="url(#bg)"/><rect width="1200" height="340" fill="url(#hex)"/>
 {rain}
-<circle cx="150" cy="170" r="250" fill="url(#gl)" class="halo"/>
+<circle cx="1054" cy="170" r="250" fill="url(#gl)" class="halo"/>
 {traces}{nodes}
-<g transform="translate(58 82)">
+<g transform="translate(966 82)">
  <circle class="ring" cx="88" cy="88" r="104" fill="none" stroke="#c4ff47" stroke-opacity=".4" stroke-dasharray="3 14" stroke-linecap="round"/>
  <svg class="mark" x="14" y="14" width="148" height="148" viewBox="0 0 40 40">{inner}</svg>
 </g>
 <g class="name"><path d="{name}" fill="#cfd2d8"/></g>
 <g class="ar"><path d="{ar}" fill="#ffffff"/></g>
-<g transform="translate(822 52)">
+<g transform="translate(58 52)">
  <rect width="330" height="236" rx="16" fill="#07080b" fill-opacity=".88" stroke="#c4ff47" stroke-opacity=".3"/>
  <circle cx="22" cy="22" r="5" fill="#ff5f56"/><circle cx="40" cy="22" r="5" fill="#ffbd2e"/><circle cx="58" cy="22" r="5" fill="#c4ff47"/>
 </g>
