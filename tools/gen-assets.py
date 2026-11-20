@@ -26,23 +26,23 @@ def shape(name, wght, text, size, x, y, tracking=0):
         pos += p.x_advance * s + tracking
     return pen.getCommands(), pos
 
-logo = open(os.path.join(HERE, 'mr-mark.svg')).read()
+logo = open(os.path.join(HERE, 'm-mark.svg')).read()
 inner = re.search(r'<svg[^>]*>(.*)</svg>', logo, re.S).group(1).replace('id="tl"', 'id="lt"').replace('url(#tl)', 'url(#lt)')
 
-name, nw = shape('syne.woff2', 800, 'Mohamed Reda', 36, 262, 176)
-ar, _ = shape('cairo-ar.woff2', 700, 'محمد رضا', 28, 264, 220)
+name, nw = shape('syne.woff2', 800, 'Mohamed Reda', 26, 266, 214, 1)
+_, aw = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, 0, 0)
+ar, _ = shape('cairo-ar.woff2', 800, 'محمد رضا', 74, 266, 172)
 
 # ---- terminal: the information, typed like code ----
 MONO, CW, FS = 'JetBrainsMono-Bold.ttf', 9.0, 15
 C = {'k': '#e8e9ec', 'p': '#7d818c', 's': '#c4ff47', 'c': '#7d818c', 'w': '#ffffff'}
 lines = [  # list of (colour, text) segments per line
-    [('c', '// who')],
-    [('w', 'const '), ('k', 'mohamed'), ('p', ' = {')],
-    [('k', '  role'), ('p', ': '), ('s', '"Full-stack developer"'), ('p', ',')],
-    [('k', '  craft'), ('p', ': '), ('s', '"Brand · Web · AI"'), ('p', ',')],
-    [('k', '  base'), ('p', ': '), ('s', '"Kuwait"'), ('p', ',')],
-    [('k', '  langs'), ('p', ': ['), ('s', '"AR"'), ('p', ', '), ('s', '"EN"'), ('p', '],')],
-    [('p', '};')],
+    [('c', '// vibe coding')],
+    [('p', '$ '), ('w', 'vibe '), ('s', '"premium bilingual site"')],
+    [('s', '✓ '), ('k', 'brand + design system')],
+    [('s', '✓ '), ('k', 'web · api · database')],
+    [('s', '✓ '), ('k', 'ai · bots · automation')],
+    [('s', '→ '), ('w', 'live '), ('p', '· Kuwait · AR / EN')],
 ]
 TX, TY, LH = 850, 112, 27       # text origin inside the card
 TOTAL = 16.0                    # seconds per loop
@@ -99,7 +99,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" view
 .nd{{fill:#c4ff47;transform-box:fill-box;transform-origin:center;animation:pulse 3.4s ease-in-out infinite}}@keyframes pulse{{50%{{opacity:.2;transform:scale(.6)}}}}
 .ring{{transform-box:fill-box;transform-origin:center;animation:spin 26s linear infinite}}@keyframes spin{{to{{transform:rotate(360deg)}}}}
 .halo{{animation:halo 4s ease-in-out infinite}}@keyframes halo{{50%{{opacity:.5}}}}
-.lg-m,.lg-r{{transform-box:fill-box;transform-origin:center;animation:pop 1s cubic-bezier(.2,.9,.2,1) both}}.lg-r{{animation-delay:.2s}}
+.lg-head,.lg-rib{{transform-box:fill-box;transform-origin:center;animation:pop 1s cubic-bezier(.2,.9,.2,1) both}}.lg-rib{{animation-delay:.25s}}.mark{{animation:float 5s ease-in-out 1.4s infinite}}@keyframes float{{50%{{transform:translateY(-4px)}}}}
 .lg-sw,.lg-star,.lg-chip{{animation:fade 1s .5s both}}
 @keyframes pop{{from{{opacity:0;transform:translateY(24px) scale(.85)}}to{{opacity:1;transform:none}}}}@keyframes fade{{from{{opacity:0}}}}
 .name{{animation:rise 1s .3s cubic-bezier(.2,.9,.2,1) both}}.ar{{animation:rise 1s .6s both}}
@@ -115,10 +115,10 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" view
 {traces}{nodes}
 <g transform="translate(58 82)">
  <circle class="ring" cx="88" cy="88" r="104" fill="none" stroke="#c4ff47" stroke-opacity=".4" stroke-dasharray="3 14" stroke-linecap="round"/>
- <svg x="14" y="14" width="148" height="148" viewBox="0 0 40 40">{inner}</svg>
+ <svg class="mark" x="14" y="14" width="148" height="148" viewBox="0 0 40 40">{inner}</svg>
 </g>
-<g class="name"><path d="{name}" fill="#ffffff"/></g>
-<g class="ar"><path d="{ar}" fill="#c4ff47"/></g>
+<g class="name"><path d="{name}" fill="#cfd2d8"/></g>
+<g class="ar"><path d="{ar}" fill="#ffffff"/></g>
 <g transform="translate(822 52)">
  <rect width="330" height="236" rx="16" fill="#07080b" fill-opacity=".88" stroke="#c4ff47" stroke-opacity=".3"/>
  <circle cx="22" cy="22" r="5" fill="#ff5f56"/><circle cx="40" cy="22" r="5" fill="#ffbd2e"/><circle cx="58" cy="22" r="5" fill="#c4ff47"/>
